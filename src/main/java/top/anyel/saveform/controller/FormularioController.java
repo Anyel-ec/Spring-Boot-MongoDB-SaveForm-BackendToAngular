@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import top.anyel.saveform.model.Formulario;
+import top.anyel.saveform.collection.Formulario;
 import top.anyel.saveform.service.FormularioService;
 
 import javax.validation.Valid;
@@ -17,6 +17,8 @@ public class FormularioController {
 
     @Autowired
     private FormularioService formularioService;
+
+
 
     @PostMapping
     public ResponseEntity<Formulario> createFormulario(@Valid @RequestBody Formulario formulario) {

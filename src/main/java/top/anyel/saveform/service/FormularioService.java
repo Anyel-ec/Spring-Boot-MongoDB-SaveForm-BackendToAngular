@@ -2,7 +2,7 @@ package top.anyel.saveform.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import top.anyel.saveform.model.Formulario;
+import top.anyel.saveform.collection.Formulario;
 import top.anyel.saveform.repository.FormularioRepository;
 
 import java.util.List;
